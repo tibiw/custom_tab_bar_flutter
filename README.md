@@ -1,6 +1,6 @@
 # custom_tab_bar_flutter
 
-A new Flutter project.
+A custom TabBar - starter for a new Flutter project.
 
 ## Getting Started
 
