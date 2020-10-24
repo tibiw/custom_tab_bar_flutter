@@ -55,10 +55,10 @@ class _MyHomePageState extends State<MyHomePage> with TickerProviderStateMixin {
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                TabBarButton(context, Icon(Icons.home), "Home"),
-                TabBarButton(context, Icon(Icons.search), "Search"),
-                TabBarButton(context, Icon(Icons.notifications), "Activity"),
-                TabBarButton(context, Icon(Icons.settings), "Settings"),
+                tabBarButton(context, Icon(Icons.home), "Home"),
+                tabBarButton(context, Icon(Icons.search), "Search"),
+                tabBarButton(context, Icon(Icons.notifications), "Activity"),
+                tabBarButton(context, Icon(Icons.settings), "Settings"),
               ],
             ),
           ),
@@ -67,8 +67,7 @@ class _MyHomePageState extends State<MyHomePage> with TickerProviderStateMixin {
     );
   }
 
-  @override
-  Widget TabBarButton(BuildContext context, Icon icon, String title) {
+  Widget tabBarButton(BuildContext context, Icon icon, String title) {
     return AnimatedContainer(
       duration: Duration(milliseconds: 180),
       curve: Curves.easeOut,
